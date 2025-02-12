@@ -4,9 +4,9 @@ const Accuil = () => {
   return (
 
     <div>
-
+        
     </div>
-    
+
   )
 }
 
