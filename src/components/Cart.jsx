@@ -6,17 +6,8 @@ export default function App() {
 
 
   const addCard = () => {
-    const newId = cards.length + 1;
-    setCards([
-      ...cards,
-      {
-        id: newId,
-        text: `Description ${newId}`,
-        image: "https://via.placeholder.com/150", 
-      },
-    ]);
+    console.log("Le bouton Ajouter a été cliqué, mais il ne fait rien !");
   };
-
 
   const deleteCard = (id) => {
     setCards(cards.filter((card) => card.id !== id));
@@ -24,15 +15,17 @@ export default function App() {
 
   return (
     <div className="container">
+
       <div className="card">
         <h2>Ajout de carte</h2>
         <button onClick={addCard} className="add">Ajouter</button>
       </div>
 
+
       {cards.map((card) => (
         <div key={card.id} className="card">
           <img src={card.image} alt="Carte" className="card-image" />
-          <h2>Titre {card.id}</h2>
+          <h2>ID: {card.id}</h2>
           <p>{card.text}</p>
           <div className="card-buttons">
             <button className="edit">Modifier</button>
@@ -43,6 +36,8 @@ export default function App() {
     </div>
   );
 }
+
+
 
 
 
