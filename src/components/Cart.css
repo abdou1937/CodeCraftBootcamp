@@ -1,0 +1,60 @@
+body {
+    background-color: #222;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.card {
+    width: 200px;
+    height: 100px;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.add {
+    background-color: green;
+    color: white;
+}
+
+.edit {
+    background-color: orange;
+    color: white;
+}
+
+
