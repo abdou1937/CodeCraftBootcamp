@@ -5,6 +5,7 @@ import { BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import './App.css'
 import Cart from './components/Cart'
 import EditPost from './components/EditPost'
+import AddCart from './components/AddCart'
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Cart/>}></Route>
-        <Route path="/edit/:id" element={<EditPost />} />
+        <Route path="/EditPost/:id" element={<EditPost />} />
+        <Route path='/addCart' element={<AddCart/>}/>
       </Routes>
     </Router>
   )
