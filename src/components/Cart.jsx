@@ -6,7 +6,7 @@ export default function App() {
 
 
   const addCard = () => {
-    console.log("Le bouton Ajouter a été cliqué, mais il ne fait rien !");
+    console.log("");
   };
 
   const deleteCard = (id) => {
