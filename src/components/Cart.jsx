@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./Cart.css"; 
+import { Link } from "react-router-dom";
+import "./Cart.css";
 
 export default function App() {
   const [cards, setCards] = useState([]);
@@ -28,7 +29,7 @@ export default function App() {
           <h2>Titre {card.id}</h2>
           <p>{card.text}</p>
           <div className="card-buttons">
-            <button className="edit">Modifier</button>
+            <button className="edit"><Link to={`/edit/${post.id}`}>Edit</Link></button>
             <button onClick={() => deleteCard(card.id)} className="delete">remove</button>
           </div>
         </div>
