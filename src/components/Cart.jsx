@@ -3,24 +3,7 @@ import { Link } from "react-router-dom";
 import "./Cart.css";
 
 export default function App() {
-  const [cards, setCards] = useState([
-    {
-      id: 1,
-      title: "test",
-      image: "../assets/react.svg", // Ensure the image path is correct
-      text: "React is a JavaScript library for building user interfaces.",
-    },
-  ]);
-
-  const addCard = () => {
-    const newCard = {
-      id: cards.length + 1,
-      title: `New Card ${cards.length + 1}`,
-      image: "./assets/react.svg",
-      text: "This is a new card.",
-    };
-    setCards([...cards, newCard]);
-  };
+  const [cards, setCards] = useState();
 
   const deleteCard = (id) => {
     setCards(cards.filter((card) => card.id !== id));
