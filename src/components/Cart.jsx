@@ -25,7 +25,7 @@ export default function App() {
       {cards.map((card) => (
         <div key={card.id} className="card">
           <img src={card.image} alt="Carte" className="card-image" />
-          <h2>ID: {card.id}</h2>
+          <h2>Titre {card.id}</h2>
           <p>{card.text}</p>
           <div className="card-buttons">
             <button className="edit">Modifier</button>
