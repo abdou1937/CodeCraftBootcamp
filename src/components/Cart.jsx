@@ -17,7 +17,7 @@ export default function App() {
     <div className="container">
 
       <div className="card">
-        <h2>Add evenet</h2>
+        <h2>Add event</h2>
         <button onClick={addCard} className="add">Add</button>
       </div>
 
