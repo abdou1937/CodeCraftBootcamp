@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import "./Cart.css";
 
 export default function App() {
-  const [cards, setCards] = useState();
+  const [cards, setCards] = useState([]);
+
+  const addCard = () => {};
 
   const deleteCard = (id) => {
     setCards(cards.filter((card) => card.id !== id));
