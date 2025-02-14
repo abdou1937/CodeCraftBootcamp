@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import './EditPost.css';
 
 const EditPost = () => {
   const {id} = useParams();
@@ -31,13 +32,15 @@ const EditPost = () => {
   };
   return (
     <>
-    <h1>Edit Post</h1>
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="title" value={post.title} onChange={handleChange}/><br />
-      <input type="text" name="author" value={post.author} onChange={handleChange}/><br />
-      <input type="text" name="content" value={post.content} onChange={handleChange}/><br />
-      <button type='submit'>save</button>
-    </form>
+      <h1>Edit Post</h1>
+    <div className='edit-container'>
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="title" value={post.title} onChange={handleChange} placeholder='title'/><br />
+        <input type="text" name="author" value={post.author} onChange={handleChange} placeholder='author'/><br />
+        <input type="text" name="content" value={post.content} onChange={handleChange} placeholder='content'/><br />
+        <button type='submit'>save</button>
+      </form>
+    </div>
     </>
   )
 }

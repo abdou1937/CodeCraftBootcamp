@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { browserRouter as Router,Route,Routes} from 'react-router-dom'
+import { BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import './App.css'
 import Cart from './components/Cart'
+import EditPost from './components/EditPost'
 
 
 function App() {
