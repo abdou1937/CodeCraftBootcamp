@@ -17,8 +17,8 @@ export default function App() {
     <div className="container">
 
       <div className="card">
-        <h2>Ajout de carte</h2>
-        <button onClick={addCard} className="add">Ajouter</button>
+        <h2>Add carte</h2>
+        <button onClick={addCard} className="add">Add</button>
       </div>
 
 
@@ -29,7 +29,7 @@ export default function App() {
           <p>{card.text}</p>
           <div className="card-buttons">
             <button className="edit">Modifier</button>
-            <button onClick={() => deleteCard(card.id)} className="delete">Supprimer</button>
+            <button onClick={() => deleteCard(card.id)} className="delete">remove</button>
           </div>
         </div>
       ))}
