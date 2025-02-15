@@ -17,17 +17,21 @@ const Cart = () => {
   };
 
   return (
-    <div className="container">
-      <div className="card">
+    <section>
+      <div className="header">
         <h2>Add event</h2>
         <Link to="/addCart">
           <button className="add">Add</button>
         </Link>
       </div>
+    
+    <div className="container">
+
       
       {posts.length > 0 ? (
         posts.map((card) => (
           <div key={card.id} className="card">
+            <div className="card-content">
             {/* Display Image if Available */}
             {card.image && (
               <img
@@ -38,6 +42,7 @@ const Cart = () => {
             )}
             <h2>{card.title}</h2>
             <p>{card.content}</p>
+            </div>
             <div className="card-buttons">
               <button className="edit">
                 <Link className="Link" to={`/EditPost/${card.id}`}>Edit</Link>
@@ -52,6 +57,7 @@ const Cart = () => {
         <p>No posts available. Add a new post!</p>
       )}
     </div>
+    </section>
   );
 };
 
