@@ -23,6 +23,9 @@ const Cart = () => {
         <Link to="/addCart">
           <button className="add">Add</button>
         </Link>
+        <Link to="/">
+        <button className="logout">Exit</button>
+        </Link>
       </div>
     
     <div className="container">
