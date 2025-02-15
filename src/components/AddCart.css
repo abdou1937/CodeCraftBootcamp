@@ -2,7 +2,10 @@ button{
     opacity: 0.8;
     background-color: green;
     color: rgb(249, 247, 247);
-
+    margin-right: 10px;
+}
+.cancel{
+    background-color: red;
 }
 .add-cart h2{
     text-align: center;
@@ -11,8 +14,7 @@ button{
     font-size: 24px;
 }
 .add-cart{
-    width: 300px;
-    height: 300px;
+    width: 400px;
     background: #333;
     color: rgb(229, 224, 224);
     border-radius: 10px;
@@ -22,4 +24,25 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.add-cart form{
+    width: 100%;
+}
+.add-cart form textarea{
+    width: 70%;
+    height: 70px;
+    padding:  10px 0 0 10px;
+}
+.add-cart input{
+    border: none;
+    outline: none;
+    border: 1px solid #444;
+    width: 70%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+.add-cart input::placeholder{
+    text-transform: capitalize;
 }
