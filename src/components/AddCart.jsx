@@ -71,7 +71,7 @@ const AddCart = () => {
           value={NewCard.title}
           onChange={handleChange}
           required
-        /><br></br>
+        />
         <input
           type="text"
           name="author"
@@ -79,7 +79,7 @@ const AddCart = () => {
           value={NewCard.author}
           onChange={handleChange}
           required
-        /><br></br>
+        />
         <textarea
           name="content"
           placeholder="content"
@@ -94,7 +94,8 @@ const AddCart = () => {
           onChange={handleChange}
         /><br></br>
         <button type="submit">Add card</button>
-        <button type='button' className='cancel' onClick={() => navigate("/")}>cancel</button>
+        <button type='button' className='cancel' onClick={() => navigate("/Cart")}>cancel</button>
+
       </form>
     </div>
   );
