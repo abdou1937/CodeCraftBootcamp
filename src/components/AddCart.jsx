@@ -19,7 +19,7 @@ const AddCart = () => {
     e.preventDefault();
 
     if (NewCard.image) {
-      // Convert the image file to a data URL
+      
       const reader = new FileReader();
       reader.onload = () => {
         const newPost = {
@@ -41,7 +41,7 @@ const AddCart = () => {
 
       reader.readAsDataURL(NewCard.image);
     } else {
-      // If no image is selected, proceed without it
+      
       const newPost = {
         id: Date.now(),
         title: NewCard.title,
@@ -54,7 +54,7 @@ const AddCart = () => {
       const updatedPosts = [...storedPosts, newPost];
       localStorage.setItem('posts', JSON.stringify(updatedPosts));
 
-      // Reset the form and navigate to the home page
+      
       setNewCard({ title: '', author: '', content: '', image: null });
       navigate('/');
     }
