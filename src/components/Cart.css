@@ -15,12 +15,17 @@ section{
 .header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 20px;
     height: 60px;
     width: 100%;
     background-color: #333;
     border-radius: 8px;
     margin-bottom: 50px;
+}
+.header div{
+    display: flex;
+    align-items: center;
 }
 .header h2{
     margin-right: 50px;

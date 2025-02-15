@@ -25,7 +25,11 @@ const Cart = () => {
           <button className="add">Add</button>
           </Link>
         </div>
-        
+        <div>
+          <Link to="/">
+          <button className="logout">Log Out</button>
+          </Link>
+        </div>
       </div>
       <hr />
     <div className="container">
