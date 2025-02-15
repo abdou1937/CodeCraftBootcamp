@@ -24,7 +24,7 @@ const Cart = () => {
           <button className="add">Add</button>
         </Link>
       </div>
-    
+      <hr />
     <div className="container">
 
       
