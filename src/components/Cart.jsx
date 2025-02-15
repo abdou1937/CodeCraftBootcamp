@@ -40,7 +40,7 @@ const Cart = () => {
             <p>{card.content}</p>
             <div className="card-buttons">
               <button className="edit">
-                <Link to={`/EditPost/${card.id}`}>Edit</Link>
+                <Link className="Link" to={`/EditPost/${card.id}`}>Edit</Link>
               </button>
               <button onClick={() => handleDelete(card.id)} className="delete">
                 delete
