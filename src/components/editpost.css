@@ -14,6 +14,7 @@
     outline: none;
     height: 40px;
     width: 70%;
+    margin-bottom: 10px;
 }
 .textarea{
     padding: 10px 0 0 10px;
@@ -22,12 +23,10 @@
     border: 1px solid #444;
     border-radius: 8px;
     width: 70% !important;
+    margin-bottom: 10px;
 }
 .edit-container input::placeholder{
     text-transform: capitalize;
-}
-.edit-container input:not(:last-child){
-    margin-bottom: 10px;
 }
 input , textarea{
     background-color: transparent;
