@@ -43,7 +43,7 @@ const EditPost = () => {
 
         const storedPosts = JSON.parse(localStorage.getItem('posts')) || [];
         const updatedPosts = storedPosts.map((p) =>
-          p.id === parseInt(id) ? updatedPost : p
+          p.id === parseInt(id) ? {...updatedPost, id: p.id} : p
         );
         localStorage.setItem('posts', JSON.stringify(updatedPosts));
 
@@ -53,14 +53,16 @@ const EditPost = () => {
     } else {
       const storedPosts = JSON.parse(localStorage.getItem('posts')) || [];
       const updatedPosts = storedPosts.map((p) =>
-        p.id === parseInt(id) ? post : p
+        p.id === parseInt(id) ? {...updatedPost, id: p.id} : p
       );
       localStorage.setItem('posts', JSON.stringify(updatedPosts));
 
       navigate('/');
     }
   };
-
+  function handleCancel(){
+    navigate('/');
+  }
   return (
     <div className="edit-container">
       <h1>Edit Post</h1>
@@ -84,6 +86,7 @@ const EditPost = () => {
         />
         <br />
         <textarea
+          className='textarea'
           name="content"
           value={post.content}
           onChange={handleChange}
@@ -99,6 +102,7 @@ const EditPost = () => {
         />
         <br />
         <button type="submit">Save</button>
+        <button className='cancel' onClick={handleCancel}>Cancel</button>
       </form>
     </div>
   );
