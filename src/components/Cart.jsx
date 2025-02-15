@@ -19,10 +19,13 @@ const Cart = () => {
   return (
     <section>
       <div className="header">
-        <h2>Add event</h2>
-        <Link to="/addCart">
+        <div> 
+          <h2>Add event</h2>
+          <Link to="/addCart">
           <button className="add">Add</button>
-        </Link>
+          </Link>
+        </div>
+        
       </div>
       <hr />
     <div className="container">
