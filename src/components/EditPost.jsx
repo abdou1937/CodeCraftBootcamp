@@ -47,7 +47,7 @@ const EditPost = () => {
         );
         localStorage.setItem('posts', JSON.stringify(updatedPosts));
 
-        navigate('/');
+        navigate('/cart');
       };
       reader.readAsDataURL(post.image);
     } else {
@@ -57,11 +57,11 @@ const EditPost = () => {
       );
       localStorage.setItem('posts', JSON.stringify(updatedPosts));
 
-      navigate('/');
+      navigate('/cart');
     }
   };
   function handleCancel(){
-    navigate('/');
+    navigate('/cart');
   }
   return (
     <div className="edit-container">

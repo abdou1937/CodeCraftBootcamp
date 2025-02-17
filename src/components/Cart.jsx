@@ -19,18 +19,20 @@ const Cart = () => {
   return (
     <section>
       <div className="header">
-        <div> 
+          <div className="addEvent">
           <h2>Add event</h2>
           <Link to="/addCart">
           <button className="add">Add</button>
           </Link>
-        </div>
-        
+          </div>
+          <div>
+            <Link to="/">
+            <button className="logout">Log Out</button>
+            </Link>
+          </div>
       </div>
       <hr />
     <div className="container">
-
-      
       {posts.length > 0 ? (
         posts.map((card) => (
           <div key={card.id} className="card">

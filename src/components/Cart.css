@@ -12,9 +12,15 @@ body {
 section{
     width: 100%;
 }
+.addEvent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 20px;
     height: 60px;
     width: 100%;

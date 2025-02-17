@@ -36,7 +36,7 @@ const AddCart = () => {
 
 
         setNewCard({ title: '', author: '', content: '', image: null });
-        navigate('/');
+        navigate('/cart');
       };
 
       reader.readAsDataURL(NewCard.image);
@@ -56,7 +56,7 @@ const AddCart = () => {
 
       
       setNewCard({ title: '', author: '', content: '', image: null });
-      navigate('/');
+      navigate('/cart');
     }
   };
 
